@@ -27,6 +27,7 @@ def getQuizJPGs():
 
 
 browser = webdriver.Chrome(executable_path="chromedriver.exe")
+
 browser.get(MAIN_PAGE)
 
 # Close the popup banner after first visit of site

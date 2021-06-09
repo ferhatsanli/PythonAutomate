@@ -34,8 +34,11 @@ def mergePDF(cikti):
 print("Converting and divorcing to JPG parts")
 pdfToJPG(GIRDI_DOSYA_ADI)
 dosya_adlari = [str(i).zfill(4)+".jpg" for i in range(1,SAYFA_SAYISI+1)]
+
 print("Converting JPGs to PDFs")
 jpgToPDF()
+
 print("Merging PDFs to one PDF")
 mergePDF(CIKTI_DOSYA_ADI)
+
 print("DONE!!!")
